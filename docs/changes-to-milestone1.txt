@@ -1,0 +1,25 @@
+NULL VALUES and FOREIGN KEYS:
+
+- EmployeeInChargeId (in Departments) can be NULL: example, maybe the current employee in charge retires, we want some time to set a new in employee in charge. Also we need to be able to create a department before creating employees.
+- PassengerName (in Complaints) can be NULL: anonymous complaint
+- Area (in Vehicles) can be NULL: if the vehicle is not available to use (example for reparation purposes...)
+
+- Area (in Drivers) can be NULL: if the driver is on holidays for example.
+- VehicleId (in Drivers) can be NULL: for the same reasons as above.
+
+- DriverId (in Schedules) can be NULL: if a driver suddently becomes available to make the schedule (we can imagine the NULL as a flag for needing a new driver for a scehdule)
+- ScheduleId (in Orders) can be NULL: when an order hasn't been assigned to a schedule yet.
+
+- OfficeId (in Managers and HRMembers) can be NULL: if they are not assigned to an office yet.
+
+- EmployeeId (in Employees) type is changed to VARCHAR(10): this is made to follow the sampledata of the form "45-3951342".
+
+- ManagerId has been deleted from tables: Drivers, Packagers, HRMembers and added to table: Employees.
+  We now consider that every employee has a manager (even Managers themselves) because we have been instructed that employees can only be logged off the database by a Manager, therefore EVERY employee has a Manager.
+  Default value will be NULL because we said that managers dont have managers. Also to go around cyclic dependency between Employee and Manager.
+
+
+
+FRONTEND & BACKEND Verification:
+
+- We have set the minimal age to be employee to 15 years. Any try to add an employee with a birth date being less to (now - 15) years will be rejected.

@@ -1,0 +1,4 @@
+employeeId,name,homeAddress,salary,dateOfBirth,insuranceNumber,managerId,departmentId
+31-1735453,Killian Amillot,"Beaulieu-sur-la-mer, Nice",32599,1948/06/27,dt545040m,NULL,1
+67-2162941,Samantha Arreille,"7 Nobel Way, Manchester",95684,1983/02/15,qf137469l,NULL,1
+85-6903134,Liv Lyron,"8 Lichfield Mount, Bradford",10000,1962/10/14,nz662678p,NULL,1

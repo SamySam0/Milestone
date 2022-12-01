@@ -1,0 +1,5 @@
+name,numberOfEmployees,headOfficeLocation,employeeInChargeId
+Manager,3,London,NULL
+HR,2,London,NULL
+Driver,5,Leeds,NULL
+Packager,10,Manchester,NULL

@@ -1,0 +1,210 @@
+/* -----------------------*/
+/*    Custom Colours     */
+/* ---------------------*/
+
+:root {
+  --main-bg-gradient-left: #fcfcfc;
+  --main-bg-gradient-right: #dadada;
+  --main-color: rgb(36, 190, 164);
+  --right-col-background: #b0b0b0;
+  --btn-hover-color: rgb(66, 84, 76);
+  --form-header-color: #44524d;
+  --table-title-bg-color: rgba(36, 190, 164, 0.285);
+}
+
+
+/* -----------------------*/
+/*  Page Layout Styles   */
+/* ---------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body {
+  background: -webkit-linear-gradient(left, var(--main-bg-gradient-left), var(--main-bg-gradient-right));
+  background: linear-gradient(to right, var(--main-bg-gradient-left), var(--main-bg-gradient-right));
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  margin: 50px;
+}
+
+.col-left {
+    float: left;
+    width: 75%;
+}
+  
+.col-right {
+    float: right;
+    width: 25%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.scrollable {
+  overflow-y: auto; 
+  position: absolute;
+}
+
+.container {
+  position:absolute;
+  background-color: var(--right-col-background);
+  border-left: 7px solid var(--main-color);
+  padding: 50px 18px;
+}
+
+
+/* -----------------------*/
+/*    Buttons Styles     */
+/* ---------------------*/
+
+.btn {
+  position: relative;
+  margin: auto;
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid white;
+  font-size: 1.3em;
+  padding: 15px 40px;
+  border-radius: 7px;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-color);
+  color: white;
+}
+
+.btn.small {
+  font-size: 0.9em;
+  padding: 10px 20px;
+  margin-bottom: 12px;
+}
+
+p {
+  color: white;
+  font-size: 0.9em;
+  margin-bottom: 7px;
+}
+
+
+/* -----------------------*/
+/*      Form Styles      */
+/* ---------------------*/
+
+.queryForm {
+  background-color: var(--main-color);
+  padding: 1em 0.8em;
+  color: white;
+  font-size: 1em;
+}
+
+form input {
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 5px;
+  color:var(--btn-hover-color);
+  background-color: #f0f0f0;
+  height: 2em;
+  padding: 0em 0.65em;
+  margin: 0.4em 0px 0px 0.4em;
+}
+
+form select {
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 5px;
+  color:var(--btn-hover-color);
+  background-color: #f0f0f0;
+  height: 2em;
+  padding: 0em 0.75em;
+  margin: 0.4em 0px 0px 0.4em;
+}
+
+.submit-btn {
+  border: 1px solid rgb(205, 205, 205);
+  height: 2em;
+  padding: 0em 1em 0em 1em;
+}
+
+.submit-btn:hover {
+  background-color: var(--btn-hover-color);
+  color: white;
+}
+
+.form-container {
+  background-color: var(--form-header-color);
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 7px;
+}
+
+
+/* -----------------------*/
+/*     Table Styles      */
+/* ---------------------*/
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tbl-title {
+  background-color: var(--table-title-bg-color);
+}
+
+.tbl-header {
+  background-color: var(--main-color);
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 2em;
+}
+
+.tbl-content {
+  height:450px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid var(--main-color);
+  background-color: #f3f3f3;
+  /* box-shadow: 0 30px 40px rgba(0,0,0,.1); */
+  border-radius: 0px 0px 5px 5px;
+}
+
+th {
+  padding: 20px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #fff;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 0.75em;
+  color: #242424;
+  border-bottom: solid 1px rgb(62 62 62 / 10%);
+}
+
+
+/* -----------------------*/
+/*     Table Styles      */
+/* ---------------------*/
+  
+::-webkit-scrollbar {
+  width: 6px;
+} 
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+} 
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 8px 0 6px rgba(45, 45, 45, 0.366); 
+}
