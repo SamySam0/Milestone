@@ -1,6 +1,6 @@
 --- INTRODUCTION ---
 
-I have decided to use Docker for my Milestone2. Therefore, I am submitting my entire project.
+This is an Amazon-like MySQL database from normalized ERD, and a web-client in PHP, JavaScript
 
 
 
